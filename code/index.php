@@ -3,7 +3,7 @@
 <head>
 <?php
  include("pelicula.php");
- include("./phpmailer/anima-testmail/mailer.php")
+ include("mailer.php")
  ?>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
