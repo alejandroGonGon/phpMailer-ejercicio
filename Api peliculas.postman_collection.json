@@ -1,0 +1,89 @@
+{
+	"info": {
+		"_postman_id": "46ecc1bc-9db7-4800-a030-c6cf686951cc",
+		"name": "Api peliculas",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "traer todas las pelis",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost/pequeñoDos/phpMailer-ejercicio/code/apiPeliculas.php",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"pequeñoDos",
+						"phpMailer-ejercicio",
+						"code",
+						"apiPeliculas.php"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "crear una pelicula",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"name\": \"Nicolas la secuela\", \"img\": \"imahe.png\"}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost/pequeñoDos/phpMailer-ejercicio/code/apiPeliculas.php/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"pequeñoDos",
+						"phpMailer-ejercicio",
+						"code",
+						"apiPeliculas.php",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "traer una pelicula",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost/pequeñoDos/phpMailer-ejercicio/code/apiPeliculas.php/?nombre=Nicolas",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"pequeñoDos",
+						"phpMailer-ejercicio",
+						"code",
+						"apiPeliculas.php",
+						""
+					],
+					"query": [
+						{
+							"key": "nombre",
+							"value": "Nicolas"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
