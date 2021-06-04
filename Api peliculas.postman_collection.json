@@ -33,7 +33,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\"name\": \"Nicolas la secuela\", \"img\": \"imahe.png\"}",
+					"raw": "{\"name\": \"Titanic\", \"img\": \"https://cdn.shopify.com/s/files/1/1416/8662/products/titanic_1997_original_film_art_dfbd6b72-6ccb-422c-b34f-82c81d2c9d86_1200x.jpg?v=1617659236\"}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -41,7 +41,7 @@
 					}
 				},
 				"url": {
-					"raw": "http://localhost/pequeñoDos/phpMailer-ejercicio/code/apiPeliculas.php/",
+					"raw": "http://localhost/pequeñoDos/phpMailer-ejercicio/code/apiPeliculas.php",
 					"protocol": "http",
 					"host": [
 						"localhost"
@@ -50,8 +50,7 @@
 						"pequeñoDos",
 						"phpMailer-ejercicio",
 						"code",
-						"apiPeliculas.php",
-						""
+						"apiPeliculas.php"
 					]
 				}
 			},
@@ -63,7 +62,7 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "http://localhost/pequeñoDos/phpMailer-ejercicio/code/apiPeliculas.php/?nombre=Nicolas",
+					"raw": "http://localhost/pequeñoDos/phpMailer-ejercicio/code/apiPeliculas.php/?nombre=Avatar",
 					"protocol": "http",
 					"host": [
 						"localhost"
@@ -78,7 +77,7 @@
 					"query": [
 						{
 							"key": "nombre",
-							"value": "Nicolas"
+							"value": "Avatar"
 						}
 					]
 				}
