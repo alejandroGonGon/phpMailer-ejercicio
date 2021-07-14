@@ -2,6 +2,8 @@
 
 include("./database/pelicula.php");
 include("./mailer/mailer.php");
+header("Access-Control-Allow-Origin: *");
+header("Access-Control-Allow-Headers: *");
 
 $peli = new Pelicula();
 
@@ -19,7 +21,7 @@ switch ($_SERVER['REQUEST_METHOD']) {
             $peli->createMovies($datos->name, $datos->img);
                 $asunto = "Pelicula enviada";
                 $texto = "Se a subido correctamente la pelicula : ".$datos->name." con la imagen : ".$datos->img;
-                $receptor = "rodrigoalbano@anima.edu.uy ";
+                $receptor = "alejandrogon1418@gmail.com ";
                 $mail = new MailTo();
                 $mail->sendMail($asunto, $texto, $receptor);
                 http_response_code(200);
